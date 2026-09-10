@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lolah Amigurumi</title>
+
+    <link rel="stylesheet" href="../SITE FINAL/css/style.css">
+    <script src="../SITE FINAL/javaScript/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ACESSIBILIDADE: Trocado de div para header para indicar o topo da página -->
+    <header id="topo">
+        <div id="logo">
+            <img src="../SITE FINAL/assets/fotos/logo.png" alt="Lolah Amigurumi">
+        </div>
+
+        <div class="barra-pesquisa">
+            <!-- ACESSIBILIDADE: Rótulo oculto (aria-label) para o leitor de tela saber o que é o campo -->
+            <input type="text" placeholder="O que você está procurando?" aria-label="Buscar produtos">
+            <button aria-label="Pesquisar">🔍</button>
+        </div>
+
+        <!-- ACESSIBILIDADE: role="navigation" indica a área de botões e links principais -->
+        <div class="navegacao" role="navigation" aria-label="Menu Principal e Acessibilidade">
+
+            <!-- CONTROLES DE ACESSIBILIDADE INSERIDOS AQUI -->
+            <!-- Botão de contraste (Branco para Preto) -->
+            <button id="btn-tema" aria-pressed="false" data-pt="🌓 Modo Escuro" data-en="🌓 Dark Mode">
+                🌓 Modo Escuro
+            </button>
+
+            <!-- Seletor de Idioma embutido -->
+            <div class="seletor-idioma">
+                <label id="label-idioma" for="idioma-select" class="sr-only">Mudar idioma:</label>
+                <select id="idioma-select" aria-label="Selecionar idioma">
+                    <option value="pt-BR">Português</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+
+            <a href="">🛒 Carrinho</a>
+            <a href="../SITE FINAL/html/form.html">👤 Minha conta</a>
+
+            <div class="menu-container">
+                <button class="menu" aria-label="Abrir menu de categorias">☰</button>
+
+            <div class="menu-opcoes">
+                <a href="../SITE FINAL/html/receita.html" data-pt="Receitas" data-en="Patterns">Receitas</a>
+                <a href="../SITE FINAL/html/INDEX.HTML" data-pt="Amigurumis" data-en="Amigurumis">Amigurumis</a>
+                <a href="../SITE FINAL/html/colecoes.html" data-pt="Coleções" data-en="Collections">Coleções</a>
+                <a href="../SITE FINAL/html/material.html" data-pt="Materiais" data-en="Materials">Materiais</a>
+            </div>
+            
+            </div>
+        </div>
+    </header>
+
+    <main class="conteudo">
+
+        <div id="principal">
+
+            <div class="titulos">
+                <!-- data-pt e data-en adicionados para tradução dinâmica -->
+                <h3 id="titulo-destaques" data-pt="DESTAQUES DA LOJA" data-en="STORE HIGHLIGHTS">DESTAQUES DA LOJA</h3>
+            </div>
+
+            <div class="produtos">
+
+                <div class="caixa">
+                    <a href="html/gato.html" class="botao-produto" aria-label="Ver detalhes do Gato, R$ 20,00">
+                        <div class="produto">
+                            <img class="card-imagem" src="assets/fotos/gato.jpg" alt="">
+                            <span class="card-tag" data-pt="Gato" data-en="Cat">Gato</span>
+                            <p>R$ 20,00</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="caixa">
+                    <a href="html/peixe.html" class="botao-produto" aria-label="Ver detalhes do Peixe, R$ 25,00">
+                        <div class="produto">
+                            <img class="card-imagem" src="assets/fotos/peixe.jpg" alt="">
+                            <span class="card-tag" data-pt="Peixe" data-en="Fish">Peixe</span>
+                            <p>R$ 25,00</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="caixa">
+                    <a href="html/aguia.html" class="botao-produto" aria-label="Ver detalhes da Águia, R$ 30,00">
+                        <div class="produto">
+                            <img class="card-imagem" src="assets/fotos/aguia.jpg" alt="">
+                            <span class="card-tag" data-pt="Águia" data-en="Eagle">Águia</span>
+                            <p>R$ 30,00</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="caixa">
+                    <a href="html/pinguim.html" class="botao-produto" aria-label="Ver detalhes do Pinguim, R$ 18,00">
+                        <div class="produto">
+                            <img class="card-imagem" src="assets/fotos/pinguim.jpg" alt="">
+                            <span class="card-tag" data-pt="Pinguim" data-en="Penguin">Pinguim</span>
+                            <p>R$ 18,00</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="caixa">
+                    <a href="html/calopsita.html" class="botao-produto" aria-label="Ver detalhes da calopsita, R$ 30,00">
+                        <div class="produto">
+                            <img class="card-imagem" src="assets/fotos/calopsita.jpg" alt="">
+                            <span class="card-tag" data-pt="calopsita" data-en="cockatiel"> Caplosita</span>
+                            <p>R$ 19,00</p>
+                        </div>
+                    </a>
+                </div>
+
+                 <div class="caixa">
+                    <a href="html/coelho.html" class="botao-produto" aria-label="Ver detalhes do coelho, R$ 30,00">
+                        <div class="produto">
+                            <img class="card-imagem" src="assets/fotos/coelho.jpg" alt="">
+                            <span class="card-tag" data-pt="coelho" data-en="rabbit"> Coelho</span>
+                            <p>R$ 26,00</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

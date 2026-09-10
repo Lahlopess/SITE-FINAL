@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gato</title>
+
+    <link rel="stylesheet" href="../css/so.css">
+    <script src="../javaScript/script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="pagina-produto">
+
+        <div class="imagem-produto">
+            <img src="../assets/fotos/gato.jpg" alt="Gato">
+        </div>
+
+        <div class="informacoes-produto">
+
+            <span class="categoria">NOSSO PRODUTO</span>
+
+            <h1>Gato</h1>
+
+            <div class="estrelas">
+                ★★★★★
+                <span>5.0</span>
+            </div>
+
+            <p class="descricao">
+                Um gatinho lindo e especial para deixar seu
+                ambiente ainda mais aconchegante. Perfeito
+                para quem ama gatos e quer algo diferente.
+            </p>
+
+            <div class="linha"></div>
+
+            <p class="preco">R$ 20,00</p>
+
+            
+            <div id="quantidade">
+            <button class="botao-quantidade" onclick="diminuir()">-</button>
+            <span id="numero">1</span>
+            <button class="botao-quantidade" onclick="aumentar()">+</button>
+            </div>
+
+            <button class="botao-comprar" onclick="adicionarAoCarrinho()">
+                Adicionar ao carrinho
+            </button>
+
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

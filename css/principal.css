@@ -1,0 +1,40 @@
+.pagina-produto {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.imagem-produto {
+    width: 450px;
+}
+
+.imagem-produto img {
+    width: 100%;
+    height: auto;
+}
+
+.informacoes-produto {
+    flex: 1;
+}
+
+.informacoes-produto h1 {
+    font-size: 35px;
+}
+
+.descricao {
+    font-size: 18px;
+}
+
+.preco {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.informacoes-produto button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

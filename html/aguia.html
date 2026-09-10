@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Águia</title>
+
+    <link rel="stylesheet" href="../css/so.css">
+    <script src="../javaScript/script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="pagina-produto">
+
+        <div class="imagem-produto">
+            <img src="../assets/fotos/aguia.jpg" alt="Águia">
+        </div>
+
+        <div class="informacoes-produto">
+
+            <span class="categoria">NOSSO PRODUTO</span>
+
+            <h1>Águia</h1>
+
+            <div class="estrelas">
+                ★★★★★
+                <span>5.0</span>
+            </div>
+
+            <p class="descricao">
+                Uma águia imponente e elegante, perfeita para
+                quem admira a força e a beleza dessas incríveis
+                aves. Um produto especial para deixar seu espaço
+                ainda mais marcante.
+            </p>
+
+            <div class="linha"></div>
+
+            <p class="preco">R$ 30,00</p>
+
+            <div id="quantidade">
+            <button class="botao-quantidade" onclick="diminuir()">-</button>
+            <span id="numero">1</span>
+            <button class="botao-quantidade" onclick="aumentar()">+</button>
+            </div>
+
+            <button class="botao-comprar" onclick="adicionarAoCarrinho()">
+                Adicionar ao carrinho
+            </button>
+
+
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
