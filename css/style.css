@@ -420,6 +420,15 @@ body {
   cursor: pointer;
 }
 
+[data-theme="dark"] .seletor-idioma select {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .seletor-idioma select option {
+    color: #000000;
+    background-color: #ffffff;
+}
+
 /* Acessibilidade visual obrigatória para navegação por teclado (Tab) */
 button:focus, select:focus, input:focus, a:focus {
   outline: 3px solid #0066cc !important;
