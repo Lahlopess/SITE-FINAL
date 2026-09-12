@@ -3,7 +3,7 @@
     --cor-fundo-claro: #ffffff;
     --cor-fundo-escuro: #202020;
     --cor-botao1: #F4BCD2;
-    --cor-botao2: #D4759C;
+    --cor-botao2: #d4759c;
     --cor-superficie: #F2E3D5;
     --cor-texto-claro: #000000;
     --cor-texto-escuro: #ffffff;
@@ -446,6 +446,8 @@ button:focus, select:focus, input:focus, a:focus {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* Botão de compra */
 .botao-comprar {
     width: 100%;
 

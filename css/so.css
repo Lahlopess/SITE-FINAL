@@ -175,7 +175,75 @@ body {
 }
 
 
+/* Quando o Modo Escuro for ativado, muda SOMENTE o fundo branco do meio (body) para preto */
+[data-theme="dark"] body {
+  background-color: #202020 !important;
+  color: #ffffff !important;
+}
+
+/* --- ESTILOS COMPLEMENTARES PARA OS BOTÕES NÃO QUEBRAREM O LAYOUT --- */
+
+/* Remove estilos padrões do botão de tema para ele se misturar aos seus links */
+.navegacao button#btn-tema {
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo discreto e transparente para o seletor de idioma */
+.navegacao .seletor-idioma select {
+  background: transparent;
+  border: 1px solid currentColor;
+  color: inherit;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+[data-theme="dark"] .seletor-idioma select {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .seletor-idioma select option {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Acessibilidade visual obrigatória para navegação por teclado (Tab) */
+button:focus, select:focus, input:focus, a:focus {
+  outline: 3px solid #0066cc !important;
+  outline-offset: 2px;
+}
+
+/* Esconde a label de idioma mantendo visível apenas para leitores de tela */
+.sr-only {
+    position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
 /* BOTÃO */
+/* Estilo para o botão de comprar no modo escuro */
+[data-theme="dark"] .botao-comprar {
+    background:#d4759c;
+    color: #202020;
+}
+[data-theme="dark"] .botao-comprar:hover {
+    background:#F4BCD2;
+    color: #202020;
+}
 
 .botao-comprar {
     width: 100%;
@@ -218,3 +286,4 @@ body {
     }
 
 }
+

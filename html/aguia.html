@@ -21,16 +21,26 @@
 
         <div class="informacoes-produto">
 
-            <span class="categoria">NOSSO PRODUTO</span>
+            <span class="categoria"
+                  data-pt="NOSSO PRODUTO"
+                  data-en="OUR PRODUCT">
+                NOSSO PRODUTO
+            </span>
 
-            <h1>Águia</h1>
+            <h1
+                data-pt="Águia"
+                data-en="Eagle">
+                Águia
+            </h1>
 
             <div class="estrelas">
                 ★★★★★
                 <span>5.0</span>
             </div>
 
-            <p class="descricao">
+            <p class="descricao"
+               data-pt="Uma águia imponente e elegante, perfeita para quem admira a força e a beleza dessas incríveis aves. Um produto especial para deixar seu espaço ainda mais marcante."
+               data-en="An impressive and elegant eagle, perfect for anyone who admires the strength and beauty of these incredible birds. A special product to make your space even more striking.">
                 Uma águia imponente e elegante, perfeita para
                 quem admira a força e a beleza dessas incríveis
                 aves. Um produto especial para deixar seu espaço
@@ -42,17 +52,18 @@
             <p class="preco">R$ 30,00</p>
 
             <div id="quantidade">
-            <button class="botao-quantidade" onclick="diminuir()">-</button>
-            <span id="numero">1</span>
-            <button class="botao-quantidade" onclick="aumentar()">+</button>
+                <button class="botao-quantidade" onclick="diminuir()">-</button>
+                <span id="numero">1</span>
+                <button class="botao-quantidade" onclick="aumentar()">+</button>
             </div>
 
-            <button class="botao-comprar" onclick="adicionarAoCarrinho()">
+            <button class="botao-comprar"
+                    onclick="adicionarAoCarrinho()"
+                    data-pt="Adicionar ao carrinho"
+                    data-en="Add to cart">
                 Adicionar ao carrinho
             </button>
 
-
-            </div>
         </div>
 
     </main>

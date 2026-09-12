@@ -161,7 +161,6 @@ if (idiomaSalvo == "en") {
     }
 }
 
-
 // deixa o select mostrando o idioma salvo
 
 if (idioma != null) {
