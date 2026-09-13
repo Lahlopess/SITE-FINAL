@@ -1,0 +1,436 @@
+
+/* =========================================
+   PÁGINA DO CARRINHO
+========================================= */
+
+.pagina-carrinho {
+
+    max-width: 1000px;
+
+    margin: 50px auto;
+
+    padding: 20px;
+
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.pagina-carrinho h1 {
+
+    font-size: 35px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================
+   SELECIONAR TODOS
+========================================= */
+
+.selecionar-todos {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    font-size: 18px;
+
+}
+
+.selecionar-todos input {
+
+    width: 18px;
+
+    height: 18px;
+
+}
+
+
+/* =========================================
+   LISTA DO CARRINHO
+========================================= */
+
+/* ALTERADO: organiza os produtos que o JavaScript cria */
+
+#lista-carrinho {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+/* =========================================
+   ITEM DO CARRINHO
+========================================= */
+
+.item-carrinho {
+
+    display: flex;
+
+    background-color: #F4BCD2;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 20px;
+
+    border: 1px solid #d4759c;
+
+    border-radius: 15px;
+
+}
+
+
+/* =========================================
+   CHECKBOX
+========================================= */
+
+.selecionar-produto {
+
+    width: 18px;
+
+    height: 18px;
+
+}
+
+
+/* =========================================
+   FOTO DO PRODUTO
+========================================= */
+
+.foto-carrinho {
+
+    width: 150px;
+
+    height: 150px;
+
+    flex-shrink: 0;
+
+}
+
+.foto-carrinho img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+}
+
+
+/* =========================================
+   IMAGEM CRIADA PELO JAVASCRIPT
+========================================= */
+
+/* ALTERADO: o JavaScript coloca a imagem
+   diretamente dentro do item */
+
+.item-carrinho > img {
+
+    width: 150px;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    flex-shrink: 0;
+
+}
+
+
+/* =========================================
+   INFORMAÇÕES
+========================================= */
+
+.informacoes-carrinho {
+
+    flex: 1;
+
+}
+
+.informacoes-carrinho h2 {
+
+    font-size: 25px;
+
+    margin-top: 0;
+
+    margin-bottom: 10px;
+
+}
+
+.informacoes-carrinho p {
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================================
+   QUANTIDADE
+========================================= */
+
+.quantidade-carrinho {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+.quantidade-carrinho button {
+
+    width: 35px;
+
+    height: 35px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #D4759C;
+
+    border-radius: 100%;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+}
+
+.quantidade-carrinho span {
+
+    font-size: 18px;
+
+}
+
+
+/* =========================================
+   PREÇO
+========================================= */
+
+.preco-carrinho {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================
+   LIXEIRA
+========================================= */
+
+.botao-lixeira {
+
+    border: none;
+
+    background: none;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================
+   BOTÃO DE LIXEIRA CRIADO PELO JAVASCRIPT
+========================================= */
+
+/* ALTERADO: o botão criado pelo JavaScript
+   também recebe o estilo da lixeira */
+
+.item-carrinho > button {
+
+    border: none;
+
+    background: none;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================
+   LINHA
+========================================= */
+
+.linha {
+
+    width: 100%;
+
+    height: 1px;
+
+    background-color: #d4759c;
+
+    margin: 30px 0;
+
+}
+
+
+/* =========================================
+   TOTAL
+========================================= */
+
+.total-carrinho {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 22px;
+
+    margin-bottom: 25px;
+
+}
+
+.total-carrinho strong {
+
+    font-size: 28px;
+
+}
+
+
+/* =========================================
+   FINALIZAR COMPRA
+========================================= */
+
+.botao-finalizar {
+
+    display: block;
+
+    margin-left: auto;
+
+    padding: 14px 30px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #D4759C;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+}
+
+.botao-finalizar:hover {
+
+    opacity: 0.8;
+
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.quantidade-carrinho button:hover {
+
+    opacity: 0.8;
+
+}
+
+.item-carrinho > button:hover {
+
+    opacity: 0.6;
+
+}
+
+
+/* =========================================
+   MODO ESCURO
+========================================= */
+
+[data-theme="dark"] .item-carrinho {
+
+    border-color: #d4759c;
+
+    background-color: #F4BCD2;
+
+    color: #202020;
+
+}
+
+[data-theme="dark"] .linha {
+
+    background-color: #d4759c;
+
+}
+
+[data-theme="dark"] .quantidade-carrinho button {
+
+    color: #202020;
+
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 700px) {
+
+    .item-carrinho {
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+    }
+
+    .item-carrinho > img {
+
+        width: 100px;
+
+        height: 100px;
+
+    }
+
+    .informacoes-carrinho {
+
+        min-width: 150px;
+
+    }
+
+    .preco-carrinho {
+
+        width: 100%;
+
+        text-align: right;
+
+    }
+
+}

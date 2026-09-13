@@ -31,7 +31,7 @@ body {
     width: 100%;
     min-height: 90px;
 
-background-color:#CCAAE2;
+    background-color:#ccaae2;
 
     display: flex;
     align-items: center;
@@ -40,7 +40,8 @@ background-color:#CCAAE2;
 
     gap: 25px;
 
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ccaae2;
+;
 }
 
 
@@ -398,17 +399,16 @@ body {
 /* --- ESTILOS COMPLEMENTARES PARA OS BOTÕES NÃO QUEBRAREM O LAYOUT --- */
 
 /* Remove estilos padrões do botão de tema para ele se misturar aos seus links */
-.navegacao button#btn-tema {
-  background: none;
-  border: none;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
+.navegacao #btn-tema {
+    background-color: #ccaae2;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
 }
-
 /* Estilo discreto e transparente para o seletor de idioma */
 .navegacao .seletor-idioma select {
   background: transparent;
@@ -431,7 +431,7 @@ body {
 
 /* Acessibilidade visual obrigatória para navegação por teclado (Tab) */
 button:focus, select:focus, input:focus, a:focus {
-  outline: 3px solid #0066cc !important;
+  outline: 3px solid #ac68da !important;
   outline-offset: 2px;
 }
 
@@ -450,31 +450,20 @@ button:focus, select:focus, input:focus, a:focus {
 /* Botão de compra */
 .botao-comprar {
     width: 100%;
-
     max-width: 250px;
-
     padding: 17px 25px;
-
     border: none;
-
     border-radius: 10px;
-
     background: #D4759C;
-
     color: white;
-
     font-size: 16px;
-
     font-weight: bold;
-
     cursor: pointer;
-
     transition: 0.3s;
     margin: 10px;
 }
 
 .botao-comprar:hover {
     background: #444;
-
     transform: translateY(-2px);
 }
