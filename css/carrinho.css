@@ -434,3 +434,10 @@
     }
 
 }
+
+.botao-lixeira-todos {
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}

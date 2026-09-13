@@ -1,173 +1,281 @@
-<html lang="pt-BR" data-theme="dark"><head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Carrinho | Lolah Amigurumi</title>
 
-    <!-- CSS DO SITE -->
-    <link rel="stylesheet" href="../css/style.css">
-
-    <!-- CSS ESPECÍFICO DO CARRINHO -->
-    <link rel="stylesheet" href="../css/carrinho.css">
-
-    <!-- JAVASCRIPT -->
-    <script src="../javaScript/script.js" defer=""></script>
-
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/carrinho.css">
+<script src="../javaScript/script.js" defer></script>
 </head>
-
 <body>
 
-    <!-- =========================
-         CABEÇALHO
-         ========================= -->
 
-    <header id="topo">
+<!--CABEÇALHO-->
 
-        <!-- LOGO -->
-        <a href="../index.html" id="logo">
+<header id="topo">
+    <a href="../INDEX.HTML" id="logo">
+        <img src="../assets/fotos/logo.png" alt="Lolah Amigurumi">
+    </a>
 
-            <img src="../assets/fotos/logo.png" alt="Lolah Amigurumi">
 
+
+    <!-- BARRA DE PESQUISA -->
+
+    <div class="barra-pesquisa">
+
+        <input
+            type="text"
+            placeholder="O que você está procurando?"
+            aria-label="Buscar produtos"
+            data-pt-placeholder="O que você está procurando?"
+            data-en-placeholder="What are you looking for?"
+        >
+
+        <button type="button">🔍</button>
+
+    </div>
+
+
+
+    <!-- NAVEGAÇÃO -->
+
+    <nav class="navegacao">
+
+        <!-- BOTÃO DE TEMA -->
+
+        <button
+            type="button"
+            id="btn-tema"
+            data-pt="🌑 Modo Escuro"
+            data-en="🌑 Dark Mode"
+        >
+            🌑 Modo Escuro
+        </button>
+
+
+
+        <!-- IDIOMA -->
+
+        <div class="seletor-idioma">
+
+            <label for="idioma-select" class="sr-only">
+                Idioma
+            </label>
+
+            <select id="idioma-select">
+
+                <option value="pt">PT-BR</option>
+
+                <option value="en">EN</option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- INÍCIO -->
+
+        <a
+            href="../INDEX.HTML"
+            data-pt="🏠 Início"
+            data-en="🏠 Home"
+        >
+            🏠 Início
         </a>
 
 
-        <!-- BARRA DE PESQUISA -->
-        <div class="barra-pesquisa">
 
-            <input type="text" placeholder="O que você está procurando?" aria-label="Buscar produtos">
+        <!-- MINHA CONTA -->
 
-            <button type="button">🔍</button>
+        <a
+            href="../html/form.html"
+            data-pt="👤 Minha conta"
+            data-en="👤 My account"
+        >
+            👤 Minha conta
+        </a>
+
+
+
+        <!-- MENU -->
+
+        <div class="menu-container">
+
+            <button type="button" class="menu">
+                ☰
+            </button>
+
+
+
+            <div class="menu-opcoes">
+
+                <a
+                    href="../html/receita.html"
+                    data-pt="📄 Receitas"
+                    data-en="📄 Patterns"
+                >
+                    📄 Receitas
+                </a>
+
+
+                <a
+                    href="../INDEX.HTML"
+                    data-pt="🧸 Amigurumis"
+                    data-en="🧸 Amigurumis"
+                >
+                    🧸 Amigurumis
+                </a>
+
+
+                <a
+                    href="../html/colecoes.html"
+                    data-pt="🛍️ Coleções"
+                    data-en="🛍️ Collections"
+                >
+                    🛍️ Coleções
+                </a>
+
+
+                <a
+                    href="../html/material.html"
+                    data-pt="🧵 Materiais"
+                    data-en="🧵 Materials"
+                >
+                    🧵 Materiais
+                </a>
+
+            </div>
 
         </div>
 
+    </nav>
 
-        <!-- NAVEGAÇÃO -->
-        <nav class="navegacao">
-
-            <!-- BOTÃO DE TEMA -->
-            <button type="button" id="btn-tema" data-pt="🌑 Modo Escuro" data-en="🌑 Dark Mode">☀️ Modo Claro</button>
+</header>
 
 
-            <!-- IDIOMA -->
-            <div class="seletor-idioma">
 
-                <label for="idioma-select" class="sr-only">
-                    Idioma
-                </label>
+<!-- =========================
+     CONTEÚDO DO CARRINHO
+     ========================= -->
 
-                <select id="idioma-select">
-
-                    <option value="pt">PT-BR</option>
-
-                    <option value="en">EN</option>
-
-                </select>
-
-            </div>
+<main class="pagina-carrinho">
 
 
-            <!-- CARRINHO -->
-            <a href="../INDEX.HTML" data-pt="🏠 Início" data-en="🏠 Home">🏠 Início</a>
 
+    <!-- TÍTULO -->
 
-            <!-- MINHA CONTA -->
-            <a href="login.html" data-pt="👤 Minha conta" data-en="👤 My account">👤 Minha conta</a>
+    <h1
+        data-pt="Meu carrinho"
+        data-en="My cart"
+    >
+        Meu carrinho
+    </h1>
 
-
-            <!-- MENU -->
-            <div class="menu-container">
-
-                <button type="button" class="menu">
-
-                    ☰
-
-                </button>
-
-
-                <div class="menu-opcoes">
-
-                    <a href="../html/receita.html" data-pt="📄 Receitas" data-en="📄 Patterns">📄 Receitas</a>
-
-                    <a href="../INDEX.HTML" data-pt="🧸 Amigurumis" data-en="🧸 Amigurumis">🧸 Amigurumis</a>
-
-                    <a href="../html/colecoes.html" data-pt="🛍️ Coleções" data-en="🛍️ Collections">🛍️ Coleções</a>
-
-
-                    <a href="../html/material.html" data-pt="🧵 Materiais" data-en="🧵 Materials">🧵 Materiais</a>
-
-                </div>
-
-            </div>
-
-        </nav>
-
-    </header>
 
 
     <!-- =========================
-         CONTEÚDO DO CARRINHO
+         SELECIONAR TODOS
          ========================= -->
 
-    <main class="pagina-carrinho">
+    <div class="selecionar-todos">
+
+        <input
+            type="checkbox"
+            id="todos"
+        >
+
+        <label
+            for="todos"
+            data-pt="Todos os itens"
+            data-en="All items"
+        >
+            Todos os itens
+        </label>
 
 
-        <!-- TÍTULO -->
-        <h1 data-pt="Meu carrinho" data-en="My cart">Meu carrinho</h1>
+        <!-- LIXEIRA PARA REMOVER TODOS -->
 
+        <button
+            type="button"
+            class="botao-lixeira-todos"
+            onclick="removerTodos()"
+            aria-label="Remover todos os produtos"
+        >
+            🗑️
+        </button>
 
-        <!-- =========================
-             SELECIONAR TODOS
-             ========================= -->
-
-        <div class="selecionar-todos">
-
-            <input type="checkbox" id="todos">
-
-            <label for="todos" data-pt="Todos os itens" data-en="All items">Todos os itens</label>
-
-        </div>
-
-
-        <!-- =========================
-             LISTA DE PRODUTOS
-             
-             IMPORTANTE:
-             O JavaScript vai colocar
-             TODOS os produtos aqui.
-             ========================= -->
-
-        <div id="lista-carrinho"><p>Seu carrinho está vazio.</p></div>
-
-
-        <!-- LINHA -->
-        <div class="linha"></div>
-
-
-        <!-- =========================
-             TOTAL
-             ========================= -->
-
-        <div class="total-carrinho">
-
-            <span data-pt="Total:" data-en="Total:">Total:</span>
-
-
-            <strong id="total">R$ 0,00</strong>
-
-        </div>
-
-
-        <!-- =========================
-             FINALIZAR COMPRA
-             ========================= -->
-
-        <button type="button" class="botao-finalizar" onclick="finalizarCompra()" data-pt="Finalizar compra" data-en="Finish purchase">Finalizar compra</button>
-
-
-    </main>
+    </div>
 
 
 
-</body></html>
+    <!-- =========================
+         LISTA DE PRODUTOS
+
+         O JavaScript vai colocar
+         TODOS os produtos aqui.
+         ========================= -->
+
+    <div id="lista-carrinho">
+
+        <p
+            data-pt="Seu carrinho está vazio."
+            data-en="Your cart is empty."
+        >
+            Seu carrinho está vazio.
+        </p>
+
+    </div>
+
+
+
+    <!-- LINHA -->
+
+    <div class="linha"></div>
+
+
+
+    <!-- =========================
+         TOTAL
+         ========================= -->
+
+    <div class="total-carrinho">
+
+        <span
+            data-pt="Total:"
+            data-en="Total:"
+        >
+            Total:
+        </span>
+
+        <strong id="total">
+            R$ 0,00
+        </strong>
+
+    </div>
+
+
+
+    <!-- =========================
+         FINALIZAR COMPRA
+         ========================= -->
+
+    <button
+        type="button"
+        class="botao-finalizar"
+        onclick="finalizarCompra()"
+        data-pt="Finalizar compra"
+        data-en="Finish purchase"
+    >
+        Finalizar compra
+    </button>
+
+
+</main>
+
+
+</body>
+
+</html>
