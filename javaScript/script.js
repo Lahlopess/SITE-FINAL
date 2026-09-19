@@ -632,3 +632,35 @@ mostrarCarrinho();
 
 alert("Compra finalizada!");
 }
+// BARRA DE PESQUISA
+const pesquisa = document.getElementById("pesquisa");
+const botaoPesquisa = document.getElementById("btn-pesquisa");
+const cards = document.querySelectorAll(".caixa");
+
+function pesquisarProdutos() {
+
+    const texto = pesquisa.value.toLowerCase().trim();
+
+    cards.forEach(function(card) {
+
+        const nomeProduto = card
+            .querySelector(".card-tag")
+            .textContent
+            .toLowerCase();
+
+        if (nomeProduto.includes(texto)) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+}
+
+if (pesquisa != null && botaoPesquisa != null) {
+
+    botaoPesquisa.addEventListener("click", pesquisarProdutos);
+
+    pesquisa.addEventListener("input", pesquisarProdutos);
+
+}

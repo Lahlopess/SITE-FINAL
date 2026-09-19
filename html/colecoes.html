@@ -25,17 +25,12 @@
 
 
         <!-- BARRA DE PESQUISA -->
+     
         <div class="barra-pesquisa">
-
-            <input
-                type="text"
-                placeholder="O que você está procurando?"
-                aria-label="Buscar produtos">
-
-            <button type="button">🔍</button>
-
+            <!-- ACESSIBILIDADE: Rótulo oculto (aria-label) para o leitor de tela saber o que é o campo -->
+            <input type="text" id="pesquisa" placeholder="O que você está procurando?" aria-label="Buscar produtos">
+            <button type="button" id="btn-pesquisa" aria-label="Pesquisar">🔍</button>
         </div>
-
 
         <!-- NAVEGAÇÃO -->
         <nav class="navegacao">
@@ -83,7 +78,7 @@
             
             <!-- MINHA CONTA -->
             <a
-                href="../INDEX.HTML"
+                href="../index.html"
                 data-pt="🏠 Início"
                 data-en="🏠 Home">
 
@@ -125,7 +120,7 @@
                     </a>
 
                     <a
-                    href="../INDEX.HTML"
+                    href="../index.html"
                     data-pt="🧸 Amigurumis"
                     data-en="🧸 Amigurumis">
                     🧸 Amigurumis
@@ -231,6 +226,28 @@
         </div>
 
     </main>
+
+<footer>
+   <h1>REDES SOCIAIS</h1>
+
+  <div id="redes">
+    <a href="https://www.instagram.com/lolah.amigurumi/" target="_blank">
+      <img src="../assets/fotos/insta.png" alt="Instagram">
+      <span>Instagram</span>
+    </a>
+    <a href="https://wa.me/5515998325302" target="_blank">
+      <img src="../assets/fotos/whats.png" alt="WhatsApp">
+      <span>WhatsApp</span>
+    </a>
+</div>
+
+
+
+  <h2><a href="https://wa.me/5515998325302" target="_blank">Suporte WhatsApp</a></h2>
+
+  <p>© 2026 Larah Lopes & Dafny Becca 1ºD.S. Todos os direitos reservados.</p>
+</footer>
+
 
 </body>
 </html>

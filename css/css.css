@@ -1,3 +1,29 @@
+:root {
+    --cor-topo: #EBE4F2;
+    --cor-fundo-claro: #ffffff;
+    --cor-fundo-escuro: #202020;
+    --cor-botao1: #F4BCD2;
+    --cor-botao2: #d4759c;
+    --cor-superficie: #F2E3D5;
+    --cor-texto-claro: #000000;
+    --cor-texto-escuro: #ffffff;
+     --cor-rodape: #cdc0ff;
+    --cor-fonte-rodape: #ff006a;
+    --cor-fonte-link: #b176d8;
+    --fonte-texto: 'Roboto', arial, sans-serif;
+    --fonte-rodape: 'Josefin Sans', sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo-claro);
+}
+
 .pagina-produto {
     max-width: 1000px;
     margin: 50px auto;
@@ -37,4 +63,93 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+
+footer {
+    position: relative;
+    width: 100%;
+    margin:0;
+    background-color: var(--cor-rodape);
+    color: var(--cor-fonte-rodape);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: start;
+    gap: 0.1rem;
+    padding: 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+footer h1 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-align: left;
+    font-size: 22px;
+    font-family: var(--fonte-rodape);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+footer h2 {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+footer h2 a {
+    color: var(--cor-fonte-rodape);
+    text-decoration: none;
+}
+
+#redes {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    justify-content: flex-start;
+    gap: 0px;
+    margin-top: -8px;
+    font-family: var(--fonte-rodape);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-fonte-rodape);
+}
+
+#redes a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: var(--cor-fonte-rodape);
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+#redes img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    display: flex;
+}
+
+footer p {
+    grid-column: 2;
+    grid-row: 2;
+    width: auto;
+    text-align: right;
+    color: var(--cor-fonte-rodape);
+    font-size: 0.95rem;
+    align-self: end;
+    justify-self: end;
+    line-height: 1.1;
 }

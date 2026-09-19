@@ -15,29 +15,18 @@
 <!--CABEÇALHO-->
 
 <header id="topo">
-    <a href="../INDEX.HTML" id="logo">
+    <a href="../index.html" id="logo">
         <img src="../assets/fotos/logo.png" alt="Lolah Amigurumi">
     </a>
 
-
-
-    <!-- BARRA DE PESQUISA -->
-
-    <div class="barra-pesquisa">
-
-        <input
-            type="text"
+   <div class="barra-pesquisa">
+            <!-- ACESSIBILIDADE: Rótulo oculto (aria-label) para o leitor de tela saber o que é o campo -->
+            <input type="text" id="pesquisa"
             placeholder="O que você está procurando?"
-            aria-label="Buscar produtos"
-            data-pt-placeholder="O que você está procurando?"
-            data-en-placeholder="What are you looking for?"
-        >
-
-        <button type="button">🔍</button>
-
-    </div>
-
-
+            aria-label="Buscar produtos">
+            <button id="btn-pesquisa" type="button" aria-label="
+            Pesquisar">🔍</button>
+        </div>
 
     <!-- NAVEGAÇÃO -->
 
@@ -79,7 +68,7 @@
         <!-- INÍCIO -->
 
         <a
-            href="../INDEX.HTML"
+            href="../index.html"
             data-pt="🏠 Início"
             data-en="🏠 Home"
         >
@@ -122,7 +111,7 @@
 
 
                 <a
-                    href="../INDEX.HTML"
+                    href="../index.html"
                     data-pt="🧸 Amigurumis"
                     data-en="🧸 Amigurumis"
                 >
@@ -269,13 +258,32 @@
         data-pt="Finalizar compra"
         data-en="Finish purchase"
     >
-        Finalizar compra
+    Finalizar compra
     </button>
 
+   </main> 
 
-</main>
+
+<footer>
+   <h1>REDES SOCIAIS</h1>
+
+  <div id="redes">
+    <a href="https://www.instagram.com/lolah.amigurumi/" target="_blank">
+      <img src="../assets/fotos/insta.png" alt="Instagram">
+      <span>Instagram</span>
+    </a>
+    <a href="https://wa.me/5515998325302" target="_blank">
+      <img src="../assets/fotos/whats.png" alt="WhatsApp">
+      <span>WhatsApp</span>
+    </a>
+</div>
 
 
+
+  <h2><a href="https://wa.me/5515998325302" target="_blank">Suporte WhatsApp</a></h2>
+
+  <p>© 2026 Larah Lopes & Dafny Becca 1ºD.S. Todos os direitos reservados.</p>
+</footer>
 </body>
 
 </html>

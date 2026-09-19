@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
-    --cor-borda: #AA8ABF;
+    --cor-topo: #EBE4F2;
     --cor-fundo-claro: #ffffff;
     --cor-fundo-escuro: #202020;
-    --cor-botao2: #F4BCD2;
-    --cor-botao1: #D4759C;
+    --cor-botao1: #F4BCD2;
+    --cor-botao2: #d4759c;
+    --cor-superficie: #F2E3D5;
     --cor-texto-claro: #000000;
     --cor-texto-escuro: #ffffff;
-    --cor-fundo: linear-gradient(to right, #ffffff, #000000);
-    --cor-topo: #000000;
-    --cor-rodape: #F4BCD2;
-    --cor-fonte-rodape: #d83579;
+     --cor-rodape: #cdc0ff;
+    --cor-fonte-rodape: #ff006a;
     --cor-fonte-link: #b176d8;
     --fonte-texto: 'Roboto', arial, sans-serif;
     --fonte-rodape: 'Josefin Sans', sans-serif;
@@ -217,6 +215,7 @@ footer {
     gap: 0.1rem;
     padding: 0;
     box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 footer h1 {
@@ -228,7 +227,7 @@ footer h1 {
     font-size: 22px;
     font-family: var(--fonte-rodape);
     line-height: 1;
-
+    margin-bottom: 4px;
 }
 
 footer h2 {
@@ -266,7 +265,7 @@ footer h2 a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 3px;
+    gap: 2px;
     color: var(--cor-fonte-rodape);
     text-decoration: none;
     line-height: 1.2;
