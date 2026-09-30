@@ -10,22 +10,11 @@
     <script src="../javaScript/script.js" defer></script>
 </head>
 
-<body>
-
-    <!-- ACESSIBILIDADE: Trocado de div para header para indicar o topo da página -->
-   
+<body>   
     <header id="topo">
-
-        <!-- LOGO -->
-        <a href="../index.html" id="logo">
-
-            <img src="../assets/fotos/logo.png" alt="Lolah Amigurumi">
-
-        </a>
-
+    <a href="../index.html" id="logo"> <img src="../assets/fotos/logo.png" alt="Lolah Amigurumi"></a>
 
         <!-- BARRA DE PESQUISA -->
-   
         <div class="barra-pesquisa">
             <!-- ACESSIBILIDADE: Rótulo oculto (aria-label) para o leitor de tela saber o que é o campo -->
             <input type="text" id="pesquisa" placeholder="O que você está procurando?" aria-label="Buscar produtos">
@@ -46,24 +35,16 @@
 
             </button>
 
-
             <!-- IDIOMA -->
             <div class="seletor-idioma">
-
                 <label for="idioma-select" class="sr-only">
                     Idioma
                 </label>
-
                 <select id="idioma-select">
-
                     <option value="pt">PT-BR</option>
-
                     <option value="en">EN</option>
-
                 </select>
-
             </div>
-
 
             <!-- CARRINHO -->
             <a

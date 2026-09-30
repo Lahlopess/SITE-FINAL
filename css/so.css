@@ -148,8 +148,6 @@ body {
   color: #ffffff !important;
 }
 
-/* --- ESTILOS COMPLEMENTARES PARA OS BOTÕES NÃO QUEBRAREM O LAYOUT --- */
-/* Remove estilos padrões do botão de tema para ele se misturar aos seus links */
 .navegacao button#btn-tema {
   background: none;
   border: none;
@@ -161,7 +159,6 @@ body {
   margin: 0;
 }
 
-/* Estilo discreto e transparente para o seletor de idioma */
 .navegacao .seletor-idioma select {
   background: transparent;
   border: 1px solid currentColor;

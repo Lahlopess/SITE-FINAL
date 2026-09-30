@@ -122,10 +122,6 @@ body {
     border-radius: 12px;
 }
 
-
-/*IMAGEM CRIADA PELO JAVASCRIPT*/
-/* ALTERADO: o JavaScript coloca a imagem
-   diretamente dentro do item */
 .item-carrinho > img {
     width: 150px;
     height: 150px;
@@ -134,7 +130,6 @@ body {
     flex-shrink: 0;
 }
 
-/*INFORMAÇÕES*/
 .informacoes-carrinho {
     flex: 1;
 }
@@ -150,7 +145,6 @@ body {
     line-height: 1.5;
     margin-bottom: 20px;
 }
-
 
 /*QUANTIDADE*/
 .quantidade-carrinho {
@@ -172,13 +166,12 @@ body {
 .quantidade-carrinho span {
     font-size: 18px;
 }
-/*PREÇO*/
+
 .preco-carrinho {
     font-size: 22px;
     font-weight: bold;
     white-space: nowrap;
 }
-
 
 /*LIXEIRA*/
 .botao-lixeira {
@@ -187,19 +180,12 @@ body {
     font-size: 22px;
     cursor: pointer;
 }
-
-/*BOTÃO DE LIXEIRA CRIADO PELO JAVASCRIPT*/
-/* ALTERADO: o botão criado pelo JavaScript
-   também recebe o estilo da lixeira */
 .item-carrinho > button {
     border: none;
     background: none;
     font-size: 22px;
     cursor: pointer;
 }
-
-
-/*LINHA*/
 .linha {
     width: 100%;
     height: 1px;
@@ -235,7 +221,6 @@ body {
     opacity: 0.8;
 }
 
-
 /*BOTÕES*/
 .quantidade-carrinho button:hover {
     opacity: 0.8;
@@ -260,7 +245,6 @@ body {
 [data-theme="dark"] .quantidade-carrinho button {
     color: #202020;
 }
-
 
 /*CELULAR*/
 @media (max-width: 700px) {
